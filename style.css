@@ -13,25 +13,29 @@ body {
 
 h1 {
   font-size: 80px;
+  font-family: var(--font-heading);
 }
 
 h2 {
-  margin: 0;
   font-size: 40px;
 }
 
 h3 {
-  margin: 0;
   font-size: 30px;
+  font-family: var(--font-heading);
+}
+
+h4 {
+  font-size: 25px;
 }
 
 h1,
+h2,
 h3,
 h4,
 h5,
 h6 {
   margin: 0;
-  font-family: var(--font-heading);
 }
 
 .button {
@@ -91,14 +95,14 @@ a {
 
 .feature {
   text-align: center;
-  padding-top: 30px;
+  padding: 30px 0;
 }
 
 .content {
-  padding: 20px 100px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 50px;
+  margin-bottom: 50px;
 }
 
 img {
@@ -118,12 +122,12 @@ img {
 
 .work-inquiry {
   display: flex;
-  margin: 20px 100px;
   background-color: var(--background-color);
   border-radius: 10px;
   align-items: center;
   justify-content: space-around;
   padding: 15px;
+  margin-top: 50px;
 }
 
 .social-media {
@@ -188,7 +192,9 @@ img {
 
 /* portfolio */
 .portfolio-container,
-.about-container {
+.about-container,
+.project,
+.blog-container {
   width: 80%;
   margin: 20px auto;
 }
@@ -198,5 +204,23 @@ img {
   grid-template-columns: repeat(2, 1fr);
   gap: 40px;
   text-align: center;
-  margin-top: 50px;
+  margin: 80px 0;
+}
+
+/* blog */
+i {
+  color: var(--primary-color);
+}
+
+.blog {
+  padding: 20px 0;
+  color: black;
+  border-bottom: 1px solid var(--primary-color);
+  display: flex;
+  justify-content: space-between;
+}
+
+.blog:hover {
+  background-color: var(--background-color);
+  transition: all 200ms ease-out;
 }
