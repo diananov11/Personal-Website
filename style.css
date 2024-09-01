@@ -9,7 +9,6 @@
 body {
   margin: 0;
   font-family: var(--font-text);
-  background-color: var(--background-color);
 }
 
 h1 {
@@ -26,11 +25,26 @@ h6 {
   margin: 0;
 }
 
+.button {
+  padding: 18px;
+  background-color: var(--primary-color);
+  border-radius: 8px;
+  border: 1px solid var(--primary-color);
+  color: white;
+  transition: all 150ms ease-in-out;
+}
+
+.button:hover,
+.button2 {
+  cursor: pointer;
+  background-color: white;
+  color: var(--primary-color);
+}
+
 /* header */
 header {
   display: flex;
   justify-content: space-between;
-  background-color: white;
   padding: 20px 60px;
 }
 
@@ -41,8 +55,11 @@ ul {
 }
 
 ul li a {
-  text-decoration: none;
   color: black;
+}
+
+a {
+  text-decoration: none;
 }
 
 .active {
@@ -53,12 +70,8 @@ ul li a {
 
 .greeting {
   text-align: center;
-  margin: 120px auto;
+  padding: 120px 0;
   background-color: var(--background-color);
-}
-
-.project {
-  background-color: white;
 }
 
 .feature {
@@ -85,4 +98,30 @@ img {
   flex-direction: column;
   justify-content: center;
   text-align: justify;
+}
+
+.work-inquiry {
+  display: flex;
+  margin: 20px 100px;
+  background-color: var(--background-color);
+  border-radius: 10px;
+  align-items: center;
+  justify-content: space-around;
+  padding: 15px;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  margin: 30px auto;
+}
+
+.social-media a i {
+  border-radius: 50%;
+  transform: scale(1.5);
+  margin: 20px 30px;
+  background-color: var(--background-color);
+  border-radius: 50%;
+  padding: 15px;
+  color: var(--primary-color);
 }
