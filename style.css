@@ -21,6 +21,7 @@ h2 {
 }
 
 h3 {
+  margin: 0;
   font-size: 30px;
 }
 
@@ -34,7 +35,7 @@ h6 {
 }
 
 .button {
-  padding: 18px;
+  padding: 12px;
   background-color: var(--primary-color);
   border-radius: 8px;
   border: 1px solid var(--primary-color);
@@ -47,6 +48,12 @@ h6 {
   cursor: pointer;
   background-color: white;
   color: var(--primary-color);
+}
+
+.button-home,
+.email {
+  display: inline-block;
+  margin: 20px;
 }
 
 /* header */
@@ -74,11 +81,6 @@ a {
   color: var(--primary-color);
 }
 
-.button-home,
-.email {
-  display: inline-block;
-  margin: 20px;
-}
 /* main */
 
 .greeting {
@@ -104,6 +106,7 @@ img {
   display: block;
   margin: 10px auto;
   border-radius: 10px;
+  border: 1px solid black;
 }
 
 .description {
@@ -143,8 +146,6 @@ img {
 .profil {
   display: flex;
   justify-content: center;
-  width: 80%;
-  margin: 50px auto;
   gap: 80px;
   text-align: justify;
 }
@@ -177,11 +178,25 @@ img {
 
 .contact {
   background-color: var(--background-color);
-  width: 80%;
   border-radius: 10px;
   padding: 50px 0;
 }
 
 .email {
   font-size: 30px;
+}
+
+/* portfolio */
+.portfolio-container,
+.about-container {
+  width: 80%;
+  margin: 20px auto;
+}
+
+.project-portfolio {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  text-align: center;
+  margin-top: 50px;
 }
