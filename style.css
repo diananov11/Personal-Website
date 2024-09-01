@@ -74,6 +74,11 @@ a {
   color: var(--primary-color);
 }
 
+.button-home,
+.email {
+  display: inline-block;
+  margin: 20px;
+}
 /* main */
 
 .greeting {
@@ -144,8 +149,10 @@ img {
   text-align: justify;
 }
 
-.certification {
+.certification,
+.contact {
   text-align: center;
+  margin: 80px auto;
 }
 
 .image img {
@@ -166,4 +173,15 @@ img {
 
 .badge-image {
   max-width: 200px;
+}
+
+.contact {
+  background-color: var(--background-color);
+  width: 80%;
+  border-radius: 10px;
+  padding: 50px 0;
+}
+
+.email {
+  font-size: 30px;
 }
