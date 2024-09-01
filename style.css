@@ -12,13 +12,18 @@ body {
   background-color: var(--background-color);
 }
 
-/* .container { */
-/* background-color: var(--background-color);
-} */
-
 h1 {
   font-family: var(--font-heading);
   font-size: 80px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
 }
 
 /* header */
@@ -45,7 +50,39 @@ ul li a {
 }
 
 /* main */
-.content {
-  background-color: var(--background-color);
+
+.greeting {
   text-align: center;
+  margin: 120px auto;
+  background-color: var(--background-color);
+}
+
+.project {
+  background-color: white;
+}
+
+.feature {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.content {
+  padding: 20px 100px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px;
+}
+
+img {
+  width: 500px;
+  display: block;
+  margin: 10px auto;
+  border-radius: 10px;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;
 }
